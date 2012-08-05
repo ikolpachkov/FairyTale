@@ -21,7 +21,7 @@
     [super dealloc];
 }
 
-+(CCScene *) scene
++ (CCScene *)scene
 {
 	CCScene *scene = [CCScene node];
 	SixthPageScene *layer = [SixthPageScene node];
@@ -34,11 +34,13 @@
     self = [super init];
     if (self) {
         
+        _staticLayer = [SixthPageStaticLayer node];
+        [self addChild:_staticLayer];
+        
         _dynamicLayer = [SixthPageDynamicLayer node];
         [self addChild:_dynamicLayer];
         
-        _staticLayer = [SixthPageStaticLayer node];
-        [self addChild:_staticLayer];
+        
     }
     return self;
 }

@@ -15,4 +15,6 @@
 @property (nonatomic, retain) SixthPageDynamicLayer *dynamicLayer;
 @property (nonatomic, retain) SixthPageStaticLayer *staticLayer;
 
++ (CCScene *)scene;
+
 @end

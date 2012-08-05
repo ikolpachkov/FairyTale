@@ -8,6 +8,6 @@
 
 #import "CCLayer.h"
 
-@interface SixthPageDynamicLayer : CCLayer
+@interface SixthPageDynamicLayer : CCLayerColor
 
 @end

@@ -130,6 +130,10 @@
 		ED627D1E15CEAC4600966B39 /* StaticGameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D1B15CEAC4600966B39 /* StaticGameObject.m */; };
 		ED627D2315CEACA000966B39 /* CollisionTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D2215CEACA000966B39 /* CollisionTypes.m */; };
 		ED627D2715CEAD7F00966B39 /* DebugLog.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D2615CEAD7F00966B39 /* DebugLog.m */; };
+		ED627D3415CF0F9A00966B39 /* VertexCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D3315CF0F9A00966B39 /* VertexCache.m */; };
+		ED627D3815CF10D000966B39 /* ShapeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D3715CF10D000966B39 /* ShapeGenerator.m */; };
+		ED627D3D15CF110E00966B39 /* SGVertexArray.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D3A15CF110D00966B39 /* SGVertexArray.m */; };
+		ED627D3E15CF110E00966B39 /* SGVertexScanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED627D3B15CF110E00966B39 /* SGVertexScanner.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -422,6 +426,14 @@
 		ED627D2515CEAD7F00966B39 /* DebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugLog.h; sourceTree = "<group>"; };
 		ED627D2615CEAD7F00966B39 /* DebugLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugLog.m; sourceTree = "<group>"; };
 		ED627D2815CEAE5900966B39 /* CommonProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonProtocol.h; sourceTree = "<group>"; };
+		ED627D3215CF0F9A00966B39 /* VertexCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertexCache.h; sourceTree = "<group>"; };
+		ED627D3315CF0F9A00966B39 /* VertexCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VertexCache.m; sourceTree = "<group>"; };
+		ED627D3615CF10D000966B39 /* ShapeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeGenerator.h; sourceTree = "<group>"; };
+		ED627D3715CF10D000966B39 /* ShapeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeGenerator.m; sourceTree = "<group>"; };
+		ED627D3915CF110D00966B39 /* SGVertexArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGVertexArray.h; sourceTree = "<group>"; };
+		ED627D3A15CF110D00966B39 /* SGVertexArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGVertexArray.m; sourceTree = "<group>"; };
+		ED627D3B15CF110E00966B39 /* SGVertexScanner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SGVertexScanner.cpp; sourceTree = "<group>"; };
+		ED627D3C15CF110E00966B39 /* SGVertexScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGVertexScanner.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -952,10 +964,11 @@
 		ED627CF515CE908700966B39 /* Singletons */ = {
 			isa = PBXGroup;
 			children = (
-				ED627CF615CE90D200966B39 /* ApplicationHelper.h */,
-				ED627CF715CE90D200966B39 /* ApplicationHelper.m */,
-				ED627D1015CEAA2F00966B39 /* SpaceHelper.h */,
-				ED627D1115CEAA2F00966B39 /* SpaceHelper.m */,
+				ED627D4115CF112900966B39 /* SpaceHelper */,
+				ED627D4015CF111E00966B39 /* ApplicationHelper */,
+				ED627D3F15CF111200966B39 /* ShapeGenerator */,
+				ED627D3215CF0F9A00966B39 /* VertexCache.h */,
+				ED627D3315CF0F9A00966B39 /* VertexCache.m */,
 			);
 			name = Singletons;
 			sourceTree = "<group>";
@@ -1050,6 +1063,37 @@
 				ED627D2615CEAD7F00966B39 /* DebugLog.m */,
 			);
 			name = DebugLog;
+			sourceTree = "<group>";
+		};
+		ED627D3F15CF111200966B39 /* ShapeGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				ED627D3615CF10D000966B39 /* ShapeGenerator.h */,
+				ED627D3715CF10D000966B39 /* ShapeGenerator.m */,
+				ED627D3915CF110D00966B39 /* SGVertexArray.h */,
+				ED627D3A15CF110D00966B39 /* SGVertexArray.m */,
+				ED627D3B15CF110E00966B39 /* SGVertexScanner.cpp */,
+				ED627D3C15CF110E00966B39 /* SGVertexScanner.h */,
+			);
+			name = ShapeGenerator;
+			sourceTree = "<group>";
+		};
+		ED627D4015CF111E00966B39 /* ApplicationHelper */ = {
+			isa = PBXGroup;
+			children = (
+				ED627CF615CE90D200966B39 /* ApplicationHelper.h */,
+				ED627CF715CE90D200966B39 /* ApplicationHelper.m */,
+			);
+			name = ApplicationHelper;
+			sourceTree = "<group>";
+		};
+		ED627D4115CF112900966B39 /* SpaceHelper */ = {
+			isa = PBXGroup;
+			children = (
+				ED627D1015CEAA2F00966B39 /* SpaceHelper.h */,
+				ED627D1115CEAA2F00966B39 /* SpaceHelper.m */,
+			);
+			name = SpaceHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1226,6 +1270,10 @@
 				ED627D1E15CEAC4600966B39 /* StaticGameObject.m in Sources */,
 				ED627D2315CEACA000966B39 /* CollisionTypes.m in Sources */,
 				ED627D2715CEAD7F00966B39 /* DebugLog.m in Sources */,
+				ED627D3415CF0F9A00966B39 /* VertexCache.m in Sources */,
+				ED627D3815CF10D000966B39 /* ShapeGenerator.m in Sources */,
+				ED627D3D15CF110E00966B39 /* SGVertexArray.m in Sources */,
+				ED627D3E15CF110E00966B39 /* SGVertexScanner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
