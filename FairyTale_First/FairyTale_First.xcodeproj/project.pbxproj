@@ -121,6 +121,15 @@
 		ED627CF815CE90D200966B39 /* ApplicationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627CF715CE90D200966B39 /* ApplicationHelper.m */; };
 		ED627CFB15CE932400966B39 /* 72.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627CFA15CE932400966B39 /* 72.png */; };
 		ED627CFD15CE935600966B39 /* 144.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627CFC15CE935600966B39 /* 144.png */; };
+		ED627D0415CEA55100966B39 /* SixthPageScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D0315CEA55100966B39 /* SixthPageScene.m */; };
+		ED627D0715CEA67C00966B39 /* SixthPageDynamicLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D0615CEA67C00966B39 /* SixthPageDynamicLayer.m */; };
+		ED627D0A15CEA69800966B39 /* SixthPageStaticLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D0915CEA69800966B39 /* SixthPageStaticLayer.m */; };
+		ED627D1215CEAA2F00966B39 /* SpaceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D1115CEAA2F00966B39 /* SpaceHelper.m */; };
+		ED627D1C15CEAC4600966B39 /* GameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D1715CEAC4600966B39 /* GameObject.m */; };
+		ED627D1D15CEAC4600966B39 /* DynamicGameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D1915CEAC4600966B39 /* DynamicGameObject.m */; };
+		ED627D1E15CEAC4600966B39 /* StaticGameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D1B15CEAC4600966B39 /* StaticGameObject.m */; };
+		ED627D2315CEACA000966B39 /* CollisionTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D2215CEACA000966B39 /* CollisionTypes.m */; };
+		ED627D2715CEAD7F00966B39 /* DebugLog.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D2615CEAD7F00966B39 /* DebugLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -393,6 +402,26 @@
 		ED627CF715CE90D200966B39 /* ApplicationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationHelper.m; sourceTree = "<group>"; };
 		ED627CFA15CE932400966B39 /* 72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 72.png; path = ../72.png; sourceTree = "<group>"; };
 		ED627CFC15CE935600966B39 /* 144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 144.png; path = ../144.png; sourceTree = "<group>"; };
+		ED627D0215CEA55100966B39 /* SixthPageScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixthPageScene.h; sourceTree = "<group>"; };
+		ED627D0315CEA55100966B39 /* SixthPageScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixthPageScene.m; sourceTree = "<group>"; };
+		ED627D0515CEA67C00966B39 /* SixthPageDynamicLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixthPageDynamicLayer.h; sourceTree = "<group>"; };
+		ED627D0615CEA67C00966B39 /* SixthPageDynamicLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixthPageDynamicLayer.m; sourceTree = "<group>"; };
+		ED627D0815CEA69800966B39 /* SixthPageStaticLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixthPageStaticLayer.h; sourceTree = "<group>"; };
+		ED627D0915CEA69800966B39 /* SixthPageStaticLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixthPageStaticLayer.m; sourceTree = "<group>"; };
+		ED627D1015CEAA2F00966B39 /* SpaceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpaceHelper.h; sourceTree = "<group>"; };
+		ED627D1115CEAA2F00966B39 /* SpaceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpaceHelper.m; sourceTree = "<group>"; };
+		ED627D1415CEAB1300966B39 /* ApplicationConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationConstants.h; sourceTree = "<group>"; };
+		ED627D1615CEAC4600966B39 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		ED627D1715CEAC4600966B39 /* GameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameObject.m; sourceTree = "<group>"; };
+		ED627D1815CEAC4600966B39 /* DynamicGameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicGameObject.h; sourceTree = "<group>"; };
+		ED627D1915CEAC4600966B39 /* DynamicGameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicGameObject.m; sourceTree = "<group>"; };
+		ED627D1A15CEAC4600966B39 /* StaticGameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticGameObject.h; sourceTree = "<group>"; };
+		ED627D1B15CEAC4600966B39 /* StaticGameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticGameObject.m; sourceTree = "<group>"; };
+		ED627D2115CEACA000966B39 /* CollisionTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionTypes.h; sourceTree = "<group>"; };
+		ED627D2215CEACA000966B39 /* CollisionTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollisionTypes.m; sourceTree = "<group>"; };
+		ED627D2515CEAD7F00966B39 /* DebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugLog.h; sourceTree = "<group>"; };
+		ED627D2615CEAD7F00966B39 /* DebugLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugLog.m; sourceTree = "<group>"; };
+		ED627D2815CEAE5900966B39 /* CommonProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -450,6 +479,7 @@
 		ED627B5E15CE8C0900966B39 /* FairyTale_First */ = {
 			isa = PBXGroup;
 			children = (
+				ED627D1315CEAAD600966B39 /* Constants */,
 				ED627CF515CE908700966B39 /* Singletons */,
 				ED627CF415CE907F00966B39 /* CommonLogic */,
 				ED627CEE15CE900100966B39 /* Scene */,
@@ -481,7 +511,8 @@
 		ED627B7315CE8C0900966B39 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				ED627CE515CE8CDA00966B39 /* chipmunk_debug */,
+				ED627D2415CEAD6E00966B39 /* DebugLog */,
+				ED627CE515CE8CDA00966B39 /* Chipmunk_debug */,
 				ED627CBF15CE8CCB00966B39 /* Objective_chipmunk */,
 				ED627C6915CE8C0B00966B39 /* LICENSE_cocos2d.txt */,
 				ED627C7815CE8C0B00966B39 /* LICENSE_CocosDenshion.txt */,
@@ -849,21 +880,26 @@
 			path = constraints;
 			sourceTree = "<group>";
 		};
-		ED627CE515CE8CDA00966B39 /* chipmunk_debug */ = {
+		ED627CE515CE8CDA00966B39 /* Chipmunk_debug */ = {
 			isa = PBXGroup;
 			children = (
 				ED627CEB15CE8CFE00966B39 /* ChipmunkDebugNode.h */,
 				ED627CEC15CE8CFE00966B39 /* ChipmunkDebugNode.m */,
 			);
-			name = chipmunk_debug;
+			name = Chipmunk_debug;
 			sourceTree = "<group>";
 		};
 		ED627CEE15CE900100966B39 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
 				ED627CF915CE90FA00966B39 /* SplashScreenScene */,
+				ED627CB615CE8C0B00966B39 /* SplashScreenScene.h */,
+				ED627CB715CE8C0B00966B39 /* SplashScreenScene.m */,
 				ED627CEF15CE901F00966B39 /* FirstPageScene */,
+				ED627CF315CE907800966B39 /* Logic */,
+				ED627CF015CE904200966B39 /* Layers */,
 				ED627CF115CE905900966B39 /* SecondPageScene */,
+				ED627CFF15CEA4EF00966B39 /* SixthPageScene */,
 			);
 			name = Scene;
 			sourceTree = "<group>";
@@ -871,8 +907,6 @@
 		ED627CEF15CE901F00966B39 /* FirstPageScene */ = {
 			isa = PBXGroup;
 			children = (
-				ED627CF315CE907800966B39 /* Logic */,
-				ED627CF015CE904200966B39 /* Layers */,
 			);
 			name = FirstPageScene;
 			sourceTree = "<group>";
@@ -887,6 +921,7 @@
 		ED627CF115CE905900966B39 /* SecondPageScene */ = {
 			isa = PBXGroup;
 			children = (
+				ED627CFE15CEA4DD00966B39 /* Logic */,
 				ED627CF215CE906E00966B39 /* Layers */,
 			);
 			name = SecondPageScene;
@@ -909,6 +944,7 @@
 		ED627CF415CE907F00966B39 /* CommonLogic */ = {
 			isa = PBXGroup;
 			children = (
+				ED627D1515CEAC2A00966B39 /* GameObjects */,
 			);
 			name = CommonLogic;
 			sourceTree = "<group>";
@@ -918,6 +954,8 @@
 			children = (
 				ED627CF615CE90D200966B39 /* ApplicationHelper.h */,
 				ED627CF715CE90D200966B39 /* ApplicationHelper.m */,
+				ED627D1015CEAA2F00966B39 /* SpaceHelper.h */,
+				ED627D1115CEAA2F00966B39 /* SpaceHelper.m */,
 			);
 			name = Singletons;
 			sourceTree = "<group>";
@@ -925,10 +963,93 @@
 		ED627CF915CE90FA00966B39 /* SplashScreenScene */ = {
 			isa = PBXGroup;
 			children = (
-				ED627CB615CE8C0B00966B39 /* SplashScreenScene.h */,
-				ED627CB715CE8C0B00966B39 /* SplashScreenScene.m */,
 			);
 			name = SplashScreenScene;
+			sourceTree = "<group>";
+		};
+		ED627CFE15CEA4DD00966B39 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		ED627CFF15CEA4EF00966B39 /* SixthPageScene */ = {
+			isa = PBXGroup;
+			children = (
+				ED627D0215CEA55100966B39 /* SixthPageScene.h */,
+				ED627D0315CEA55100966B39 /* SixthPageScene.m */,
+				ED627D0115CEA51800966B39 /* Logic */,
+				ED627D0015CEA50F00966B39 /* Layers */,
+			);
+			name = SixthPageScene;
+			sourceTree = "<group>";
+		};
+		ED627D0015CEA50F00966B39 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				ED627D0515CEA67C00966B39 /* SixthPageDynamicLayer.h */,
+				ED627D0615CEA67C00966B39 /* SixthPageDynamicLayer.m */,
+				ED627D0815CEA69800966B39 /* SixthPageStaticLayer.h */,
+				ED627D0915CEA69800966B39 /* SixthPageStaticLayer.m */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		ED627D0115CEA51800966B39 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		ED627D1315CEAAD600966B39 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				ED627D1415CEAB1300966B39 /* ApplicationConstants.h */,
+				ED627D2115CEACA000966B39 /* CollisionTypes.h */,
+				ED627D2215CEACA000966B39 /* CollisionTypes.m */,
+				ED627D2815CEAE5900966B39 /* CommonProtocol.h */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		ED627D1515CEAC2A00966B39 /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				ED627D1615CEAC4600966B39 /* GameObject.h */,
+				ED627D1715CEAC4600966B39 /* GameObject.m */,
+				ED627D2015CEAC5800966B39 /* StaticObjects */,
+				ED627D1F15CEAC4C00966B39 /* DynamicObjects */,
+			);
+			name = GameObjects;
+			sourceTree = "<group>";
+		};
+		ED627D1F15CEAC4C00966B39 /* DynamicObjects */ = {
+			isa = PBXGroup;
+			children = (
+				ED627D1815CEAC4600966B39 /* DynamicGameObject.h */,
+				ED627D1915CEAC4600966B39 /* DynamicGameObject.m */,
+			);
+			name = DynamicObjects;
+			sourceTree = "<group>";
+		};
+		ED627D2015CEAC5800966B39 /* StaticObjects */ = {
+			isa = PBXGroup;
+			children = (
+				ED627D1A15CEAC4600966B39 /* StaticGameObject.h */,
+				ED627D1B15CEAC4600966B39 /* StaticGameObject.m */,
+			);
+			name = StaticObjects;
+			sourceTree = "<group>";
+		};
+		ED627D2415CEAD6E00966B39 /* DebugLog */ = {
+			isa = PBXGroup;
+			children = (
+				ED627D2515CEAD7F00966B39 /* DebugLog.h */,
+				ED627D2615CEAD7F00966B39 /* DebugLog.m */,
+			);
+			name = DebugLog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1096,6 +1217,15 @@
 				ED627CB815CE8C0B00966B39 /* SplashScreenScene.m in Sources */,
 				ED627CED15CE8CFE00966B39 /* ChipmunkDebugNode.m in Sources */,
 				ED627CF815CE90D200966B39 /* ApplicationHelper.m in Sources */,
+				ED627D0415CEA55100966B39 /* SixthPageScene.m in Sources */,
+				ED627D0715CEA67C00966B39 /* SixthPageDynamicLayer.m in Sources */,
+				ED627D0A15CEA69800966B39 /* SixthPageStaticLayer.m in Sources */,
+				ED627D1215CEAA2F00966B39 /* SpaceHelper.m in Sources */,
+				ED627D1C15CEAC4600966B39 /* GameObject.m in Sources */,
+				ED627D1D15CEAC4600966B39 /* DynamicGameObject.m in Sources */,
+				ED627D1E15CEAC4600966B39 /* StaticGameObject.m in Sources */,
+				ED627D2315CEACA000966B39 /* CollisionTypes.m in Sources */,
+				ED627D2715CEAD7F00966B39 /* DebugLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
