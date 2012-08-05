@@ -8,10 +8,10 @@
 
 
 // Import the interfaces
-#import "HelloWorldLayer.h"
+#import "SplashScreenScene.h"
 
 // HelloWorldLayer implementation
-@implementation HelloWorldLayer
+@implementation SplashScreenScene
 
 +(CCScene *) scene
 {
@@ -19,7 +19,7 @@
 	CCScene *scene = [CCScene node];
 	
 	// 'layer' is an autorelease object.
-	HelloWorldLayer *layer = [HelloWorldLayer node];
+	SplashScreenScene *layer = [SplashScreenScene node];
 	
 	// add layer as a child to scene
 	[scene addChild: layer];
@@ -36,7 +36,7 @@
 	if( (self=[super init])) {
 		
 		// create and initialize a Label
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:64];
+		CCLabelTTF *label = [CCLabelTTF labelWithString:@"OPA" fontName:@"Marker Felt" fontSize:64];
 
 		// ask director the the window size
 		CGSize size = [[CCDirector sharedDirector] winSize];

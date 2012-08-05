@@ -121,9 +121,10 @@
 		ED627CAF15CE8C0B00966B39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627CAE15CE8C0B00966B39 /* main.m */; };
 		ED627CB215CE8C0B00966B39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627CB115CE8C0B00966B39 /* AppDelegate.m */; };
 		ED627CB515CE8C0B00966B39 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627CB415CE8C0B00966B39 /* RootViewController.m */; };
-		ED627CB815CE8C0B00966B39 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627CB715CE8C0B00966B39 /* HelloWorldLayer.m */; };
+		ED627CB815CE8C0B00966B39 /* SplashScreenScene.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627CB715CE8C0B00966B39 /* SplashScreenScene.m */; };
 		ED627CE415CE8CCB00966B39 /* libObjectiveChipmunk-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED627CE215CE8CCB00966B39 /* libObjectiveChipmunk-iPhone.a */; };
 		ED627CED15CE8CFE00966B39 /* ChipmunkDebugNode.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627CEC15CE8CFE00966B39 /* ChipmunkDebugNode.m */; };
+		ED627CF815CE90D200966B39 /* ApplicationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627CF715CE90D200966B39 /* ApplicationHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -359,8 +360,8 @@
 		ED627CB115CE8C0B00966B39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ED627CB315CE8C0B00966B39 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		ED627CB415CE8C0B00966B39 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		ED627CB615CE8C0B00966B39 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		ED627CB715CE8C0B00966B39 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
+		ED627CB615CE8C0B00966B39 /* SplashScreenScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashScreenScene.h; sourceTree = "<group>"; };
+		ED627CB715CE8C0B00966B39 /* SplashScreenScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashScreenScene.m; sourceTree = "<group>"; };
 		ED627CB915CE8C0B00966B39 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		ED627CC115CE8CCB00966B39 /* chipmunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chipmunk.h; sourceTree = "<group>"; };
 		ED627CC215CE8CCB00966B39 /* chipmunk_ffi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chipmunk_ffi.h; sourceTree = "<group>"; };
@@ -398,6 +399,8 @@
 		ED627CE315CE8CCB00966B39 /* ObjectiveChipmunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveChipmunk.h; sourceTree = "<group>"; };
 		ED627CEB15CE8CFE00966B39 /* ChipmunkDebugNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChipmunkDebugNode.h; sourceTree = "<group>"; };
 		ED627CEC15CE8CFE00966B39 /* ChipmunkDebugNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChipmunkDebugNode.m; sourceTree = "<group>"; };
+		ED627CF615CE90D200966B39 /* ApplicationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationHelper.h; sourceTree = "<group>"; };
+		ED627CF715CE90D200966B39 /* ApplicationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -455,12 +458,13 @@
 		ED627B5E15CE8C0900966B39 /* FairyTale_First */ = {
 			isa = PBXGroup;
 			children = (
+				ED627CF515CE908700966B39 /* Singletons */,
+				ED627CF415CE907F00966B39 /* CommonLogic */,
+				ED627CEE15CE900100966B39 /* Scene */,
 				ED627CB015CE8C0B00966B39 /* AppDelegate.h */,
 				ED627CB115CE8C0B00966B39 /* AppDelegate.m */,
 				ED627CB315CE8C0B00966B39 /* RootViewController.h */,
 				ED627CB415CE8C0B00966B39 /* RootViewController.m */,
-				ED627CB615CE8C0B00966B39 /* HelloWorldLayer.h */,
-				ED627CB715CE8C0B00966B39 /* HelloWorldLayer.m */,
 				ED627CB915CE8C0B00966B39 /* GameConfig.h */,
 				ED627B5F15CE8C0900966B39 /* Resources */,
 				ED627B7315CE8C0900966B39 /* libs */,
@@ -866,6 +870,79 @@
 			name = chipmunk_debug;
 			sourceTree = "<group>";
 		};
+		ED627CEE15CE900100966B39 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				ED627CF915CE90FA00966B39 /* SplashScreenScene */,
+				ED627CEF15CE901F00966B39 /* FirstPageScene */,
+				ED627CF115CE905900966B39 /* SecondPageScene */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		ED627CEF15CE901F00966B39 /* FirstPageScene */ = {
+			isa = PBXGroup;
+			children = (
+				ED627CF315CE907800966B39 /* Logic */,
+				ED627CF015CE904200966B39 /* Layers */,
+			);
+			name = FirstPageScene;
+			sourceTree = "<group>";
+		};
+		ED627CF015CE904200966B39 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		ED627CF115CE905900966B39 /* SecondPageScene */ = {
+			isa = PBXGroup;
+			children = (
+				ED627CF215CE906E00966B39 /* Layers */,
+			);
+			name = SecondPageScene;
+			sourceTree = "<group>";
+		};
+		ED627CF215CE906E00966B39 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		ED627CF315CE907800966B39 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		ED627CF415CE907F00966B39 /* CommonLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CommonLogic;
+			sourceTree = "<group>";
+		};
+		ED627CF515CE908700966B39 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				ED627CF615CE90D200966B39 /* ApplicationHelper.h */,
+				ED627CF715CE90D200966B39 /* ApplicationHelper.m */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		ED627CF915CE90FA00966B39 /* SplashScreenScene */ = {
+			isa = PBXGroup;
+			children = (
+				ED627CB615CE8C0B00966B39 /* SplashScreenScene.h */,
+				ED627CB715CE8C0B00966B39 /* SplashScreenScene.m */,
+			);
+			name = SplashScreenScene;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1032,8 +1109,9 @@
 				ED627CAF15CE8C0B00966B39 /* main.m in Sources */,
 				ED627CB215CE8C0B00966B39 /* AppDelegate.m in Sources */,
 				ED627CB515CE8C0B00966B39 /* RootViewController.m in Sources */,
-				ED627CB815CE8C0B00966B39 /* HelloWorldLayer.m in Sources */,
+				ED627CB815CE8C0B00966B39 /* SplashScreenScene.m in Sources */,
 				ED627CED15CE8CFE00966B39 /* ChipmunkDebugNode.m in Sources */,
+				ED627CF815CE90D200966B39 /* ApplicationHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
