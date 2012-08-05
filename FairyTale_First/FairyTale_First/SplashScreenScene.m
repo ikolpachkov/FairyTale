@@ -37,7 +37,7 @@
 		
 		// create and initialize a Label
 		CCLabelTTF *label = [CCLabelTTF labelWithString:@"OPA" fontName:@"Marker Felt" fontSize:64];
-
+//        label.color = ccc3(100, 100, 100);
 		// ask director the the window size
 		CGSize size = [[CCDirector sharedDirector] winSize];
 	

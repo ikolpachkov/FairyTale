@@ -17,12 +17,6 @@
 		ED627B5D15CE8C0900966B39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED627B5C15CE8C0900966B39 /* CoreGraphics.framework */; };
 		ED627B6115CE8C0900966B39 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627B6015CE8C0900966B39 /* Default.png */; };
 		ED627B6315CE8C0900966B39 /* fps_images.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627B6215CE8C0900966B39 /* fps_images.png */; };
-		ED627B6515CE8C0900966B39 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627B6415CE8C0900966B39 /* Icon-72.png */; };
-		ED627B6715CE8C0900966B39 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627B6615CE8C0900966B39 /* Icon-Small-50.png */; };
-		ED627B6915CE8C0900966B39 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627B6815CE8C0900966B39 /* Icon-Small.png */; };
-		ED627B6B15CE8C0900966B39 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627B6A15CE8C0900966B39 /* Icon-Small@2x.png */; };
-		ED627B6D15CE8C0900966B39 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627B6C15CE8C0900966B39 /* Icon.png */; };
-		ED627B6F15CE8C0900966B39 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627B6E15CE8C0900966B39 /* Icon@2x.png */; };
 		ED627B7215CE8C0900966B39 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = ED627B7115CE8C0900966B39 /* iTunesArtwork */; };
 		ED627B7715CE8C0900966B39 /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627B7615CE8C0900966B39 /* CCAction.m */; };
 		ED627B7A15CE8C0900966B39 /* CCActionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627B7915CE8C0900966B39 /* CCActionCamera.m */; };
@@ -125,6 +119,8 @@
 		ED627CE415CE8CCB00966B39 /* libObjectiveChipmunk-iPhone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED627CE215CE8CCB00966B39 /* libObjectiveChipmunk-iPhone.a */; };
 		ED627CED15CE8CFE00966B39 /* ChipmunkDebugNode.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627CEC15CE8CFE00966B39 /* ChipmunkDebugNode.m */; };
 		ED627CF815CE90D200966B39 /* ApplicationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627CF715CE90D200966B39 /* ApplicationHelper.m */; };
+		ED627CFB15CE932400966B39 /* 72.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627CFA15CE932400966B39 /* 72.png */; };
+		ED627CFD15CE935600966B39 /* 144.png in Resources */ = {isa = PBXBuildFile; fileRef = ED627CFC15CE935600966B39 /* 144.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,12 +135,6 @@
 		ED627B5C15CE8C0900966B39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		ED627B6015CE8C0900966B39 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
 		ED627B6215CE8C0900966B39 /* fps_images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fps_images.png; path = Resources/fps_images.png; sourceTree = "<group>"; };
-		ED627B6415CE8C0900966B39 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/Icon-72.png"; sourceTree = "<group>"; };
-		ED627B6615CE8C0900966B39 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Resources/Icon-Small-50.png"; sourceTree = "<group>"; };
-		ED627B6815CE8C0900966B39 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Resources/Icon-Small.png"; sourceTree = "<group>"; };
-		ED627B6A15CE8C0900966B39 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Resources/Icon-Small@2x.png"; sourceTree = "<group>"; };
-		ED627B6C15CE8C0900966B39 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Resources/Icon.png; sourceTree = "<group>"; };
-		ED627B6E15CE8C0900966B39 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Resources/Icon@2x.png"; sourceTree = "<group>"; };
 		ED627B7015CE8C0900966B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
 		ED627B7115CE8C0900966B39 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = Resources/iTunesArtwork; sourceTree = "<group>"; };
 		ED627B7515CE8C0900966B39 /* CCAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CCAction.h; path = libs/cocos2d/CCAction.h; sourceTree = "<group>"; };
@@ -401,6 +391,8 @@
 		ED627CEC15CE8CFE00966B39 /* ChipmunkDebugNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChipmunkDebugNode.m; sourceTree = "<group>"; };
 		ED627CF615CE90D200966B39 /* ApplicationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationHelper.h; sourceTree = "<group>"; };
 		ED627CF715CE90D200966B39 /* ApplicationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationHelper.m; sourceTree = "<group>"; };
+		ED627CFA15CE932400966B39 /* 72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 72.png; path = ../72.png; sourceTree = "<group>"; };
+		ED627CFC15CE935600966B39 /* 144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 144.png; path = ../144.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -476,14 +468,10 @@
 		ED627B5F15CE8C0900966B39 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ED627CFC15CE935600966B39 /* 144.png */,
+				ED627CFA15CE932400966B39 /* 72.png */,
 				ED627B6015CE8C0900966B39 /* Default.png */,
 				ED627B6215CE8C0900966B39 /* fps_images.png */,
-				ED627B6415CE8C0900966B39 /* Icon-72.png */,
-				ED627B6615CE8C0900966B39 /* Icon-Small-50.png */,
-				ED627B6815CE8C0900966B39 /* Icon-Small.png */,
-				ED627B6A15CE8C0900966B39 /* Icon-Small@2x.png */,
-				ED627B6C15CE8C0900966B39 /* Icon.png */,
-				ED627B6E15CE8C0900966B39 /* Icon@2x.png */,
 				ED627B7015CE8C0900966B39 /* Info.plist */,
 				ED627B7115CE8C0900966B39 /* iTunesArtwork */,
 			);
@@ -995,13 +983,9 @@
 			files = (
 				ED627B6115CE8C0900966B39 /* Default.png in Resources */,
 				ED627B6315CE8C0900966B39 /* fps_images.png in Resources */,
-				ED627B6515CE8C0900966B39 /* Icon-72.png in Resources */,
-				ED627B6715CE8C0900966B39 /* Icon-Small-50.png in Resources */,
-				ED627B6915CE8C0900966B39 /* Icon-Small.png in Resources */,
-				ED627B6B15CE8C0900966B39 /* Icon-Small@2x.png in Resources */,
-				ED627B6D15CE8C0900966B39 /* Icon.png in Resources */,
-				ED627B6F15CE8C0900966B39 /* Icon@2x.png in Resources */,
 				ED627B7215CE8C0900966B39 /* iTunesArtwork in Resources */,
+				ED627CFB15CE932400966B39 /* 72.png in Resources */,
+				ED627CFD15CE935600966B39 /* 144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1164,12 +1148,14 @@
 				GCC_PREFIX_HEADER = FairyTale_First/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = FairyTale_First/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/FairyTale_First/chipmunk\"",
 				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1183,12 +1169,14 @@
 				GCC_PREFIX_HEADER = FairyTale_First/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = FairyTale_First/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/FairyTale_First/chipmunk\"",
 				);
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
