@@ -13,12 +13,13 @@
 #import "ChipmunkDebugNode.h"
 #import "DynamicGameObject.h"
 
-@interface SpaceHelper : CCNode 
+@interface SpaceHelper : CCNode <UIAccelerometerDelegate>
 
 @property (nonatomic, retain) ChipmunkSpace *currentSpace;
 @property (nonatomic, assign) BOOL pause;
 @property (nonatomic, retain) ChipmunkDebugNode *debug;
 @property (nonatomic, assign) float updateSpaceInterval;
+@property (nonatomic, assign) BOOL isUsingAccelerometer;
 
 + (id) sharedSpaceHelper;
 

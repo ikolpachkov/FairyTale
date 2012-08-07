@@ -11,3 +11,5 @@
 
 //Objects properties
 #define STATIC_OBJECTS_ELASTICITY 0.1
+#define GROUND_ELASTICITY 0.1f
+#define GROUND_FRICTION 0.5f

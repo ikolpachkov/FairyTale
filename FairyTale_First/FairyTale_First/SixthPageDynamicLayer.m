@@ -14,6 +14,8 @@
 #import "VertexCache.h"
 #import "ShapeGenerator.h"
 
+#import "ExternalBorder.h"
+
 #define DYNAMIC_BODY_MASS 1
 #define STATIC_BODY_MASS 1
 
@@ -96,7 +98,11 @@
         [testDynamicObjectVH addToSpace:[spaceHelper currentSpace]];
         [testDynamicObjectVH addToLayer:self];
         
-//******** dynamic with automatic vertex        
+//******** dynamic with automatic vertex
+        
+        
+        ExternalBorder *externalBorderObject = [[ExternalBorder alloc] initWithLocation:position];
+        [externalBorderObject addToSpace:[spaceHelper currentSpace]];
         
     }
     return self;

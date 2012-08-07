@@ -13,7 +13,7 @@
 @synthesize pause = _pause;
 @synthesize debug = _debug;
 @synthesize updateSpaceInterval = _updateSpaceInterval;
-
+@synthesize isUsingAccelerometer = _isUsingAccelerometer;
 static SpaceHelper *_sharedSpaceHelper = nil;
 
 + (id)sharedSpaceHelper
@@ -26,9 +26,30 @@ static SpaceHelper *_sharedSpaceHelper = nil;
 	return _sharedSpaceHelper;
 }
 
+- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
+{
+    if (_isUsingAccelerometer) {
+        switch ([[UIApplication sharedApplication] statusBarOrientation]) {
+            case UIInterfaceOrientationLandscapeLeft:
+                _currentSpace.gravity = cpv(-acceleration.y * SPACE_GRAVITY * adaptationCoefficient,  SPACE_GRAVITY * adaptationCoefficient);
+                break;
+            case UIInterfaceOrientationLandscapeRight:
+                _currentSpace.gravity = cpv(acceleration.y * SPACE_GRAVITY * adaptationCoefficient,  SPACE_GRAVITY * adaptationCoefficient);
+                break;
+                
+            default:
+                break;
+        }
+    }
+}
+
 
 - (id)init
 {
+    [[UIAccelerometer sharedAccelerometer] setDelegate:self];
+    [[UIAccelerometer sharedAccelerometer] setUpdateInterval:1/60];
+    _isUsingAccelerometer = YES;
+    
 	if (_sharedSpaceHelper != nil)
 	{
 		[NSException raise:NSInternalInconsistencyException format:@"[%@ %@] cannot be called; use +[%@ %@] instead",
@@ -45,7 +66,7 @@ static SpaceHelper *_sharedSpaceHelper = nil;
 		_currentSpace.gravity = cpv(0, SPACE_GRAVITY * adaptationCoefficient);
         
 		_currentSpace.damping = SPACE_DAMPING;
-		_currentSpace.iterations = 15;
+		_currentSpace.iterations = 5;
 
 		_updateSpaceInterval = UPDATE_INTERVAL;
 		//_currentSpace.sleepTimeThreshold = .5f;

@@ -134,6 +134,8 @@
 		ED627D3815CF10D000966B39 /* ShapeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D3715CF10D000966B39 /* ShapeGenerator.m */; };
 		ED627D3D15CF110E00966B39 /* SGVertexArray.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D3A15CF110D00966B39 /* SGVertexArray.m */; };
 		ED627D3E15CF110E00966B39 /* SGVertexScanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED627D3B15CF110E00966B39 /* SGVertexScanner.cpp */; };
+		ED627D4F15D04F7500966B39 /* ExternalBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = ED627D4E15D04F7500966B39 /* ExternalBorder.m */; };
+		ED8D35D915D1B5FA00C10085 /* AccelerometerController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8D35D815D1B5FA00C10085 /* AccelerometerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -434,6 +436,11 @@
 		ED627D3A15CF110D00966B39 /* SGVertexArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGVertexArray.m; sourceTree = "<group>"; };
 		ED627D3B15CF110E00966B39 /* SGVertexScanner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SGVertexScanner.cpp; sourceTree = "<group>"; };
 		ED627D3C15CF110E00966B39 /* SGVertexScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGVertexScanner.h; sourceTree = "<group>"; };
+		ED627D4D15D04F7500966B39 /* ExternalBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalBorder.h; sourceTree = "<group>"; };
+		ED627D4E15D04F7500966B39 /* ExternalBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalBorder.m; sourceTree = "<group>"; };
+		ED8D35D715D1B5FA00C10085 /* AccelerometerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccelerometerController.h; sourceTree = "<group>"; };
+		ED8D35D815D1B5FA00C10085 /* AccelerometerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccelerometerController.m; sourceTree = "<group>"; };
+		ED8D35DA15D1B64000C10085 /* AccelerometerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccelerometerProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -956,6 +963,7 @@
 		ED627CF415CE907F00966B39 /* CommonLogic */ = {
 			isa = PBXGroup;
 			children = (
+				ED8D35D515D1B4B800C10085 /* AccelerometerController */,
 				ED627D1515CEAC2A00966B39 /* GameObjects */,
 			);
 			name = CommonLogic;
@@ -1050,6 +1058,7 @@
 		ED627D2015CEAC5800966B39 /* StaticObjects */ = {
 			isa = PBXGroup;
 			children = (
+				ED627D4B15D04EE800966B39 /* ExternalBorderObject */,
 				ED627D1A15CEAC4600966B39 /* StaticGameObject.h */,
 				ED627D1B15CEAC4600966B39 /* StaticGameObject.m */,
 			);
@@ -1094,6 +1103,25 @@
 				ED627D1115CEAA2F00966B39 /* SpaceHelper.m */,
 			);
 			name = SpaceHelper;
+			sourceTree = "<group>";
+		};
+		ED627D4B15D04EE800966B39 /* ExternalBorderObject */ = {
+			isa = PBXGroup;
+			children = (
+				ED627D4D15D04F7500966B39 /* ExternalBorder.h */,
+				ED627D4E15D04F7500966B39 /* ExternalBorder.m */,
+			);
+			name = ExternalBorderObject;
+			sourceTree = "<group>";
+		};
+		ED8D35D515D1B4B800C10085 /* AccelerometerController */ = {
+			isa = PBXGroup;
+			children = (
+				ED8D35DA15D1B64000C10085 /* AccelerometerProtocol.h */,
+				ED8D35D715D1B5FA00C10085 /* AccelerometerController.h */,
+				ED8D35D815D1B5FA00C10085 /* AccelerometerController.m */,
+			);
+			name = AccelerometerController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1274,6 +1302,8 @@
 				ED627D3815CF10D000966B39 /* ShapeGenerator.m in Sources */,
 				ED627D3D15CF110E00966B39 /* SGVertexArray.m in Sources */,
 				ED627D3E15CF110E00966B39 /* SGVertexScanner.cpp in Sources */,
+				ED627D4F15D04F7500966B39 /* ExternalBorder.m in Sources */,
+				ED8D35D915D1B5FA00C10085 /* AccelerometerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
